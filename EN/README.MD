@@ -6,8 +6,6 @@ A modern, fast, fully manageable single-page website (landing page) through the 
 
 Perfect for **any business**: services, sales, consultations, portfolio, restaurants, salons, auto services, legal services, IT companies, etc.
 
-![Main page — Vilnius Cleaning 2026](screen1.jpg)
-![Main page — Vilnius Cleaning 2026](screen2.jpg)
 ---
 ## ✨ Key Features of Version 1.0
 ### ✅ Fully manageable website — no coding required
