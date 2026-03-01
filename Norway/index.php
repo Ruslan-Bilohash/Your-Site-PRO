@@ -210,4 +210,135 @@ $error = isset($_GET['error']) && $_GET['error'] == 1 ? ($json['order_form']['er
     <section class="py-20 bg-white border-t border-b">
         <div class="max-w-4xl mx-auto px-6 text-center">
             <h2 class="text-4xl font-bold mb-8"><?= htmlspecialchars($json['seo_text']['h2'] ?? '') ?></h2>
-            <p class="text-lg text-gray
+            <p class="text-lg text-gray-600 leading-relaxed mb-6"><?= htmlspecialchars($json['seo_text']['p1'] ?? '') ?></p>
+            <p class="text-lg text-gray-600 leading-relaxed"><?= htmlspecialchars($json['seo_text']['p2'] ?? '') ?></p>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="py-24 bg-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-5xl font-bold"><?= htmlspecialchars($json['faq']['h2'] ?? '') ?></h2>
+            </div>
+            <div class="space-y-6">
+                <?php foreach($json['faq']['items'] as $faq): ?>
+                <details class="bg-gray-50 border border-gray-200 rounded-3xl p-8 group">
+                    <summary class="font-semibold text-xl cursor-pointer flex justify-between items-center"><?= htmlspecialchars($faq['q'] ?? '') ?></summary>
+                    <p class="mt-6 text-gray-600"><?= htmlspecialchars($faq['a'] ?? '') ?></p>
+                </details>
+                <?php endforeach; ?>
+            </div>
+        </div>
+    </section>
+
+    <!-- ORDER FORM -->
+    <section id="order" class="py-24 bg-gradient-to-br from-emerald-700 to-teal-800 text-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-5xl font-bold"><?= htmlspecialchars($json['order_form']['h2'] ?? '') ?></h2>
+                <p class="mt-4 text-xl opacity-90"><?= htmlspecialchars($json['order_form']['p'] ?? '') ?></p>
+            </div>
+            <?php if ($success): ?>
+                <div class="bg-emerald-500 text-white p-8 rounded-3xl text-center mb-8">
+                    <i class="fa-solid fa-circle-check text-6xl mb-4"></i>
+                    <h3 class="text-3xl font-bold"><?= htmlspecialchars($json['order_form']['success_title'] ?? '') ?></h3>
+                    <p class="mt-3"><?= htmlspecialchars($json['order_form']['success_text'] ?? '') ?></p>
+                </div>
+            <?php endif; ?>
+            <?php if ($error): ?>
+                <div class="bg-red-600 text-white p-6 rounded-3xl text-center mb-8"><?= htmlspecialchars($error) ?></div>
+            <?php endif; ?>
+            <form method="POST" action="submit.php" class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <label class="block text-sm mb-2"><?= htmlspecialchars($json['order_form']['labels']['name'] ?? '') ?></label>
+                    <input type="text" name="name" required class="w-full px-6 py-5 rounded-3xl bg-white/10 border border-white/30 focus:border-white outline-none text-white placeholder-white/60">
+                </div>
+                <div>
+                    <label class="block text-sm mb-2"><?= htmlspecialchars($json['order_form']['labels']['phone'] ?? '') ?></label>
+                    <input type="tel" name="phone" required class="w-full px-6 py-5 rounded-3xl bg-white/10 border border-white/30 focus:border-white outline-none text-white placeholder-white/60">
+                </div>
+                <div class="md:col-span-2">
+                    <label class="block text-sm mb-2"><?= htmlspecialchars($json['order_form']['labels']['message'] ?? '') ?></label>
+                    <textarea name="message" rows="5" class="w-full px-6 py-5 rounded-3xl bg-white/10 border border-white/30 focus:border-white outline-none text-white placeholder-white/60"></textarea>
+                </div>
+                <div class="md:col-span-2 text-center">
+                    <button type="submit" class="bg-white text-emerald-700 hover:bg-emerald-100 font-bold text-xl px-16 py-7 rounded-3xl inline-flex items-center gap-4 transition shadow-2xl">
+                        <i class="fa-solid fa-paper-plane"></i> SEND FORESPORESEL
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- CONTACTS BAR -->
+    <div class="bg-white py-8 border-t border-b">
+        <div class="max-w-7xl mx-auto px-6 flex flex-wrap justify-center gap-x-12 gap-y-6 text-lg">
+            <a href="tel:<?= htmlspecialchars($json['general']['phone'] ?? '') ?>" class="flex items-center gap-3 hover:text-emerald-600 transition"><i class="fa-solid fa-phone text-2xl"></i><span><?= htmlspecialchars($json['general']['phone'] ?? '') ?></span></a>
+            <a href="https://wa.me/<?= str_replace(['+',' ','-'], '', $json['general']['phone'] ?? '') ?>" target="_blank" class="flex items-center gap-3 hover:text-emerald-600 transition"><i class="fa-brands fa-whatsapp text-3xl"></i><span>WhatsApp</span></a>
+            <a href="viber://chat?number=<?= str_replace(['+',' ','-'], '', $json['general']['phone'] ?? '') ?>" class="flex items-center gap-3 hover:text-emerald-600 transition"><i class="fa-brands fa-viber text-3xl"></i><span>Viber</span></a>
+            <a href="https://t.me/+<?= str_replace(['+',' ','-'], '', $json['general']['phone'] ?? '') ?>" target="_blank" class="flex items-center gap-3 hover:text-emerald-600 transition"><i class="fa-brands fa-telegram text-3xl"></i><span>Telegram</span></a>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-900 text-white py-16">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-12">
+            <div>
+                <div class="flex items-center gap-3 text-3xl mb-6">
+                    <i class="fa-solid fa-broom text-emerald-500"></i>
+                    <span class="font-bold"><?= htmlspecialchars($json['general']['site_name'] ?? '') ?></span>
+                </div>
+                <p class="text-gray-400"><?= htmlspecialchars($json['footer']['about'] ?? '') ?></p>
+            </div>
+            <div>
+                <div class="font-semibold mb-4 text-emerald-400">KONTAKT</div>
+                <div class="space-y-3 text-gray-300">
+                    <div><i class="fa-solid fa-location-dot"></i> <?= htmlspecialchars($json['general']['address'] ?? '') ?></div>
+                    <a href="tel:<?= htmlspecialchars($json['general']['phone'] ?? '') ?>" class="block hover:text-white"><?= htmlspecialchars($json['general']['phone'] ?? '') ?></a>
+                    <a href="mailto:<?= htmlspecialchars($json['general']['email'] ?? '') ?>" class="block hover:text-white"><?= htmlspecialchars($json['general']['email'] ?? '') ?></a>
+                </div>
+            </div>
+            <div>
+                <div class="font-semibold mb-4 text-emerald-400">VI RENGJØR I DISSE OMRÅDENE</div>
+                <div class="text-gray-400 leading-relaxed"><?= htmlspecialchars($json['footer']['districts'] ?? '') ?></div>
+            </div>
+        </div>
+        <div class="mt-16 pt-8 border-t border-gray-800 text-center text-sm text-gray-500">
+            <p>Laget med ❤️ <a href="https://bilohash.com" target="_blank" class="hover:text-white">Ruslan Bilohash</a></p>
+            <div class="mt-6">
+                <a href="donate.php" class="inline-flex items-center gap-2 text-emerald-400 hover:text-emerald-300 transition text-sm">
+                    <i class="fa-solid fa-heart"></i> Støtt utvikleren
+                </a>
+            </div>
+            <p class="mt-6"><?= htmlspecialchars($json['footer']['copyright'] ?? '') ?></p>
+            <?= $json['custom_code']['footer_html'] ?? '' ?>
+        </div>
+    </footer>
+
+    <!-- SCHEMA -->
+    <script type="application/ld+json">
+    <?= json_encode([
+        "@context" => "https://schema.org",
+        "@type" => "LocalBusiness",
+        "name" => $json['schema']['name'] ?? '',
+        "description" => $json['schema']['description'] ?? '',
+        "url" => $json['schema']['url'] ?? '',
+        "telephone" => $json['schema']['telephone'] ?? '',
+        "address" => ["@type" => "PostalAddress", "streetAddress" => $json['schema']['streetAddress'] ?? '', "addressLocality" => $json['schema']['addressLocality'] ?? '', "addressCountry" => $json['schema']['addressCountry'] ?? ''],
+        "openingHours" => $json['schema']['openingHours'] ?? '',
+        "priceRange" => $json['schema']['priceRange'] ?? '',
+        "aggregateRating" => ["@type" => "AggregateRating", "ratingValue" => $json['schema']['ratingValue'] ?? '5', "reviewCount" => $json['schema']['reviewCount'] ?? '100'],
+        "image" => $json['schema']['image'] ?? ''
+    ], JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT) ?>
+    </script>
+    <script>
+        <?= $json['custom_code']['js'] ?? '' ?>
+        function toggleLang() { document.getElementById('langDropdown').classList.toggle('hidden'); }
+        function toggleMobileMenu() { document.getElementById('mobileMenu').classList.toggle('hidden'); }
+        document.addEventListener('click', function(e) {
+            if (!e.target.closest('.relative')) document.getElementById('langDropdown').classList.add('hidden');
+        });
+    </script>
+</body>
+</html>
