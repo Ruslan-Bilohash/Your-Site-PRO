@@ -1,0 +1,316 @@
+{
+    "general": {
+        "phone": "+1 234 567 8900",
+        "email": "info@your-site.com",
+        "address": "Main Street 1, [CITY]",
+        "site_name": "Your Site!",
+        "year": "2026"
+    },
+    "meta": {
+        "title": "Professional Cleaning Services in [CITY] | Your Site | Apartments, Offices, Post-Construction 2026",
+        "description": "Professional cleaning services in [CITY] ✓ Your Site offers apartment, office and post-renovation cleaning ✓ Eco-friendly products, fast response, 100% satisfaction guarantee ✓ Call: +1 234 567 8900",
+        "keywords": "cleaning [CITY], professional cleaning [CITY], office cleaning [CITY], post-construction cleaning [CITY], deep cleaning [CITY]",
+        "robots": "index, follow, max-image-preview:large",
+        "author": "Ruslan Bilohash",
+        "theme_color": "#10b981",
+        "canonical": "https://yourdomain.com"
+    },
+    "og": {
+        "title": "Professional Cleaning in [CITY] | Your Site",
+        "description": "Your Site — professional cleaning of apartments, offices and after renovation in [CITY]. Eco-friendly products, fast service, quality guarantee.",
+        "image": "https://picsum.photos/seed/professional-cleaning-hero/1200/630",
+        "image_width": "1200",
+        "image_height": "630",
+        "url": "https://yourdomain.com",
+        "type": "website",
+        "locale": "en_US",
+        "site_name": "Your Site"
+    },
+    "twitter": {
+        "card": "summary_large_image",
+        "title": "Professional Cleaning Services in [CITY] | Your Site",
+        "description": "Professional cleaning in [CITY] ✓ Apartments • Offices • Post-renovation • Eco-friendly products",
+        "image": "https://picsum.photos/seed/professional-cleaning-hero/1200/630"
+    },
+    "header": {
+        "logo_text": "Your Site",
+        "nav_items": [
+            {
+                "text": "Services",
+                "anchor": "#services"
+            },
+            {
+                "text": "Advantages",
+                "anchor": "#advantages"
+            },
+            {
+                "text": "How We Work",
+                "anchor": "#how"
+            },
+            {
+                "text": "Gallery",
+                "anchor": "#gallery"
+            },
+            {
+                "text": "Reviews",
+                "anchor": "#reviews"
+            },
+            {
+                "text": "FAQ",
+                "anchor": "#faq"
+            },
+            {
+                "text": "Order",
+                "anchor": "#order"
+            }
+        ]
+    },
+    "hero": {
+        "h1": "PROFESSIONAL CLEANING<br>IN [CITY] 2026",
+        "p": "Your Site is fast, high-quality and eco-friendly cleaning of apartments, offices and post-renovation in [CITY]. We use professional equipment and certified eco-friendly products. 100% cleanliness guaranteed.",
+        "button_order": "Order Cleaning in [CITY]",
+        "button_phone": "+1 234 567 8900",
+        "bottom_text": "[CITY] • Open daily 08:00–22:00 • 100% Cleanliness Guarantee"
+    },
+    "services": {
+        "badge": "SERVICES",
+        "h2": "Professional Cleaning in [CITY] — All Types of Cleaning",
+        "p": "Your Site offers a full range of professional cleaning services in [CITY].",
+        "items": [
+            {
+                "image": "https://picsum.photos/seed/apartment-clean/600/400",
+                "title": "Apartment Cleaning",
+                "text": "Regular, general and deep cleaning of apartments in [CITY].",
+                "footer": "Perfect cleanliness for your home"
+            },
+            {
+                "image": "https://picsum.photos/seed/office-clean/600/400",
+                "title": "Office Cleaning",
+                "text": "Daily and deep office cleaning in [CITY].",
+                "footer": "Clean workspace for your business"
+            },
+            {
+                "image": "https://picsum.photos/seed/post-renovation/600/400",
+                "title": "Post-Construction Cleaning",
+                "text": "Complete removal of construction dust and debris after renovation.",
+                "footer": "Post-renovation cleaning"
+            },
+            {
+                "image": "https://picsum.photos/seed/general-clean/600/400",
+                "title": "Deep General Cleaning",
+                "text": "Thorough deep cleaning of any space in [CITY].",
+                "footer": "Deep general cleaning"
+            }
+        ]
+    },
+    "advantages": {
+        "badge": "WHY US",
+        "h2": "Why Customers Choose Your Site",
+        "p": "We deliver perfect cleanliness using only eco-friendly products and professional equipment.",
+        "items": [
+            {
+                "emoji": "♻️",
+                "title": "100% Eco-Friendly Products",
+                "text": "Safe for children and pets."
+            },
+            {
+                "emoji": "⭐",
+                "title": "Experienced Team",
+                "text": "Every cleaner has at least 3 years of experience."
+            },
+            {
+                "emoji": "⏱️",
+                "title": "Fast Response",
+                "text": "We arrive anywhere in [CITY] within 2-4 hours."
+            },
+            {
+                "emoji": "🔒",
+                "title": "Fixed Price",
+                "text": "No hidden fees."
+            },
+            {
+                "emoji": "🛡️",
+                "title": "Quality Guarantee",
+                "text": "Free re-cleaning if needed."
+            },
+            {
+                "emoji": "📍",
+                "title": "All Districts",
+                "text": "We serve the entire [CITY] area."
+            }
+        ]
+    },
+    "how": {
+        "badge": "PROCESS",
+        "h2": "How We Work",
+        "p": "Simple and transparent process from request to perfect cleanliness.",
+        "steps": [
+            {
+                "num": "1",
+                "title": "Request",
+                "text": "Call or fill out the form."
+            },
+            {
+                "num": "2",
+                "title": "Arrival",
+                "text": "Our team arrives at a convenient time."
+            },
+            {
+                "num": "3",
+                "title": "Cleaning",
+                "text": "We perform a full professional cleaning."
+            },
+            {
+                "num": "4",
+                "title": "Quality Check",
+                "text": "We inspect the result."
+            }
+        ]
+    },
+    "gallery": {
+        "badge": "GALLERY",
+        "h2": "Before & After",
+        "p": "Real photos of our work in [CITY].",
+        "images": [
+            {
+                "url": "https://picsum.photos/seed/clean-kitchen/600/400",
+                "alt": "Kitchen Cleaning"
+            },
+            {
+                "url": "https://picsum.photos/seed/office-cleaning/600/400",
+                "alt": "Office Cleaning"
+            },
+            {
+                "url": "https://picsum.photos/seed/bathroom-clean/600/400",
+                "alt": "Bathroom Cleaning"
+            },
+            {
+                "url": "https://picsum.photos/seed/living-room-clean/600/400",
+                "alt": "Living Room Cleaning"
+            },
+            {
+                "url": "https://picsum.photos/seed/window-cleaning/600/400",
+                "alt": "Window Cleaning"
+            },
+            {
+                "url": "https://picsum.photos/seed/floor-cleaning/600/400",
+                "alt": "Floor Cleaning"
+            }
+        ]
+    },
+    "reviews": {
+        "badge": "REVIEWS",
+        "h2": "What Our Clients Say",
+        "items": [
+            {
+                "stars": "★★★★★",
+                "text": "The best cleaning service! Everything sparkles.",
+                "name": "Elena K.",
+                "info": "[CITY] • 2 weeks ago"
+            },
+            {
+                "stars": "★★★★★",
+                "text": "Perfect post-renovation cleaning.",
+                "name": "Andrew S.",
+                "info": "[CITY] • 1 month ago"
+            },
+            {
+                "stars": "★★★★★",
+                "text": "Regular office cleaning at the highest level.",
+                "name": "XYZ Company",
+                "info": "[CITY] • 3 weeks ago"
+            }
+        ]
+    },
+    "seo_text": {
+        "h2": "Professional Cleaning in [CITY] — Your Trusted Partner",
+        "p1": "Your Site has been operating since 2026 and has become the favorite cleaning service for families and companies in [CITY].",
+        "p2": "We offer flexible scheduling, fixed prices and a full quality guarantee."
+    },
+    "faq": {
+        "h2": "Frequently Asked Questions",
+        "items": [
+            {
+                "q": "How much does cleaning cost?",
+                "a": "Price depends on the area and type of cleaning."
+            },
+            {
+                "q": "Do you use eco-friendly products?",
+                "a": "Yes, all products are 100% eco-friendly."
+            },
+            {
+                "q": "Which districts do you serve?",
+                "a": "We work throughout the entire [CITY] area."
+            },
+            {
+                "q": "How long does cleaning take?",
+                "a": "Regular cleaning takes 2–3 hours."
+            },
+            {
+                "q": "Can I book cleaning for today?",
+                "a": "Yes, if we have available cleaners."
+            },
+            {
+                "q": "Do you clean after renovation?",
+                "a": "Yes, this is our main specialty."
+            }
+        ]
+    },
+    "order_form": {
+        "h2": "Order Cleaning in [CITY] Right Now",
+        "p": "We reply within 15 minutes • Service throughout [CITY] • Fixed price",
+        "success_title": "Thank You! Request Received.",
+        "success_text": "We will contact you shortly.",
+        "error_text": "Error sending the request. Please try again later.",
+        "labels": {
+            "name": "Your Name",
+            "phone": "Phone Number",
+            "message": "Address in [CITY] and any special requests"
+        }
+    },
+    "footer": {
+        "about": "Professional cleaning services in [CITY] since 2026. Your Site — the highest quality.",
+        "districts": "All districts of [CITY]",
+        "copyright": "© 2026 Your Site. All rights reserved."
+    },
+    "schema": {
+        "name": "Your Site PRO",
+        "description": "Professional Cleaning Services in [CITY]",
+        "url": "https://yourdomain.com",
+        "telephone": "+12345678900",
+        "streetAddress": "Main Street 22",
+        "addressLocality": "[CITY]",
+        "addressCountry": "US",
+        "openingHours": "Mo-Su 08:00-22:00",
+        "priceRange": "$$",
+        "ratingValue": "4.98",
+        "reviewCount": "142",
+        "image": "https://picsum.photos/seed/professional-cleaning-hero/1200/630"
+    },
+    "email_settings": {
+        "recipient": "rbilohash@gmail.com",
+        "from_email": "no-reply@your-site.com",
+        "from_name": "Your Site PRO — Cleaning [CITY]",
+        "subject_prefix": "New Cleaning Request — ",
+        "success_redirect": "?success=1",
+        "error_redirect": "?error=1",
+        "company_name": "Your Site PRO",
+        "city": "[CITY]"
+    },
+    "donate": {
+        "title": "Support the Author",
+        "subtitle": "If this template helped you launch your site quickly — support the developer with a coffee ☕",
+        "text": "Every donation motivates me to create even better templates and tools.",
+        "buymeacoffee": "https://buymeacoffee.com/bilohash",
+        "wise": "https://wise.com/pay/me/ruslanb933",
+        "paypal": "https://www.paypal.com/donate/?hosted_button_id=GSS6YYMXZ3J4N",
+        "vipps": "+47 462 55 885",
+        "qr_paypal": "https://edukvam.com/seo/QR-kode-paypal.png"
+    },
+    "custom_code": {
+        "head": "<!-- Add your own code in <head> (Google Analytics, meta, etc.) -->",
+        "style": "/* Add your custom CSS here */",
+        "js": "// Add your custom JavaScript here",
+        "footer_html": "<!-- Add HTML before </body> -->"
+    }
+}
